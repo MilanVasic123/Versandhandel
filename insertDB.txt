@@ -1,0 +1,18 @@
+INSERT INTO produkte (id, bez, beschr, preis, tierart) VALUES
+('P0001','Trockenfutter für Hunde, 12kg','Vollnahrstoff für Hunde',49.99,1),
+('P0002','Nassfutter Huhn für Hunde, 400g','Feines Nassfutter mit Huhn',1.49,1),
+('P0003','Snack Zahnpflege Hund','Kausnack zur Zahnpflege',3.99,1),
+('P0004','Trockenfutter Kitten, 5kg','Speziell für wachsende Katzenkinder',29.50,2),
+('P0005','Nassfutter Lachs für Katzen, 85g','Single-Protein Lachs',0.99,2),
+('P0006','Katzenstreu 10L','Staubarm, stark klumpend',9.90,2),
+('P0007','Senior Hundefutter 10kg','Schonende Rezeptur für ältere Hunde',54.90,1),
+('P0008','Feuchtfutter Mix für Katzen, 12x85g','Praktische Packung mit verschiedenen Sorten',11.99,2);
+
+
+
+
+<p><strong>ID:</strong> <?= htmlspecialchars($successProdukt['id']) ?></p>
+          <p><strong>Bezeichnung:</strong> <?= htmlspecialchars($successProdukt['bez']) ?></p>
+          <p><strong>Beschreibung:</strong> <?= htmlspecialchars($successProdukt['beschr']) ?></p>
+          <p><strong>Preis:</strong> <?= number_format($successProdukt['preis'], 2, ',', '.') ?> €</p>
+          <p><strong>Tierart:</strong> <?= $successProdukt['tierart'] === 1 ? 'Hunde' : 'Katzen' ?></p>
