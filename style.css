@@ -42,7 +42,7 @@ body {
 
 .results th, .results td, .success th, .success td  {
   border: 2px solid rgb(255, 255, 255);
-  padding: 8px;
+  padding: 9px;
   text-align: left;
 }
 

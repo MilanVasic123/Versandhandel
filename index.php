@@ -1,5 +1,5 @@
 <?php
-
+    //vami
     require 'configDB.php';
 
     // species aus GET oder default 0 (keine Auswahl)
